@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orderWebsite>
+    <header>
+        <title>Order Your Cell Phone</title>
+    </header>
+    <main>
+        <form action="/submit-order" method="post">
+            <phoneModel>
+                <label>Select Phone Model:</label>
+                <options>
+                    <option value="iphone">iPhone</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="google-pixel">Google Pixel</option>
+                </options>
+            </phoneModel>
+            <quantity>
+                <label>Quantity:</label>
+                <input type="number" min="1" required="true"/>
+            </quantity>
+            <customerName>
+                <label>Your Name:</label>
+                <input type="text" required="true"/>
+            </customerName>
+            <customerEmail>
+                <label>Your Email:</label>
+                <input type="email" required="true"/>
+            </customerEmail>
+            <submit>
+                <button type="submit">Place Order</button>
+            </submit>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cell Phone Orders</p>
+    </footer>
+</orderWebsite>
